@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class LoginPageComponent {
 
+  usuario: string = '';
+  contrasena : string = ''
+  concatenar : string = ''
+  
+  ingresar(): void {
+    this.concatenar = 'Usuario: ' + this.usuario + ' Contraseña: '
+  }
+
 }
